@@ -1,0 +1,423 @@
+/* ============================================
+   THANK YOU PAGE - ESTILOS
+============================================ */
+
+.thankyou-page {
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+}
+
+/* Hero section */
+.thankyou-hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 20px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+/* Logo superior */
+.thankyou-logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/* Contenedor principal */
+.thankyou-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Icono de éxito */
+.thankyou-icon {
+    animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Título principal */
+.thankyou-titulo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f5c400;
+    margin: 0;
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+/* Subtítulo */
+.thankyou-subtitulo {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+/* Mensaje informativo */
+.thankyou-mensaje {
+    background: rgba(245, 196, 0, 0.1);
+    border: 1px solid rgba(245, 196, 0, 0.3);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 600px;
+    animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.thankyou-mensaje p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.thankyou-mensaje p:last-child {
+    margin-bottom: 0;
+}
+
+.thankyou-mensaje strong {
+    color: #f5c400;
+}
+
+.texto-destacado {
+    color: #f5c400;
+    font-weight: bold;
+}
+
+/* Información adicional */
+.thankyou-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 700px;
+    animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
+.info-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(245, 196, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+.info-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.info-texto h3 {
+    font-size: 18px;
+    color: #f5c400;
+    margin: 0 0 8px 0;
+}
+
+.info-texto p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Botones de acción */
+.thankyou-acciones {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeInUp 0.6s ease-out 0.6s both;
+}
+
+.btn-jugar {
+    padding: 16px 48px;
+    background: #f5c400;
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-jugar:hover {
+    background: #ffd700;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 196, 0, 0.4);
+}
+
+.btn-secundario {
+    padding: 16px 48px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secundario:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+}
+
+/* Redes sociales */
+.thankyou-redes {
+    margin-top: 24px;
+    animation: fadeInUp 0.6s ease-out 0.7s both;
+}
+
+.thankyou-redes p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+}
+
+.redes-iconos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.red-social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.red-social:hover {
+    background: rgba(245, 196, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.red-social img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+.red-social:hover img {
+    opacity: 1;
+}
+
+/* Footer */
+.thankyou-footer {
+    margin-top: auto;
+    padding: 32px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 0.6s ease-out 0.8s both;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-content p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f5c400;
+}
+
+.footer-links span {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-logo-img {
+    height: 28px;
+    opacity: 0.7;
+}
+
+/* Animación fadeInUp */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE
+============================================ */
+@media (max-width: 768px) {
+    .thankyou-hero {
+        padding: 24px 16px 16px;
+    }
+
+    .thankyou-logo {
+        width: 140px;
+        margin-bottom: 32px;
+    }
+
+    .thankyou-container {
+        gap: 24px;
+    }
+
+    .thankyou-icon svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .thankyou-titulo {
+        font-size: 32px;
+    }
+
+    .thankyou-subtitulo {
+        font-size: 18px;
+    }
+
+    .thankyou-mensaje {
+        padding: 24px 20px;
+    }
+
+    .thankyou-mensaje p {
+        font-size: 14px;
+    }
+
+    .thankyou-info {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .info-item {
+        padding: 20px;
+    }
+
+    .info-icon {
+        font-size: 32px;
+    }
+
+    .info-texto h3 {
+        font-size: 16px;
+    }
+
+    .info-texto p {
+        font-size: 13px;
+    }
+
+    .thankyou-acciones {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .btn-jugar,
+    .btn-secundario {
+        width: 100%;
+        padding: 14px 32px;
+        font-size: 16px;
+    }
+
+    .thankyou-redes {
+        margin-top: 16px;
+    }
+
+    .redes-iconos {
+        gap: 16px;
+    }
+
+    .red-social {
+        width: 36px;
+        height: 36px;
+    }
+
+    .red-social img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-content {
+        gap: 12px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-links span {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .thankyou-titulo {
+        font-size: 28px;
+    }
+
+    .thankyou-subtitulo {
+        font-size: 16px;
+    }
+
+    .thankyou-mensaje {
+        padding: 20px 16px;
+    }
+}
+
+/* ============================================
+   TABLETS
+============================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .thankyou-container {
+        max-width: 700px;
+    }
+
+    .thankyou-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
